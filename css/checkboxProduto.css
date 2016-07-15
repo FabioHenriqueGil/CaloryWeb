@@ -1,0 +1,101 @@
+/* chekbox do produto*/
+
+input[type=checkbox].css-checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:100px;
+    height:75px; 
+    display:inline-block;
+    line-height:75px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:75px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -75px;
+}
+
+input[type=checkbox].css-checkbox.lrg + label.css-label.lrg {
+    padding-left:110px;
+    height:100px; 
+    display:inline-block;
+    line-height:100px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:75px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg{
+
+    background-position: 0 -100px;
+}
+.vlad{background-image:url(../img/checkboxProdutos.png);}
+
+#botaoChek{
+    width: 100%;
+    height: 100px;
+    background-color:#22ff11;
+}
+#botaounChek{
+    width: 100%;
+    height: 100px;
+    background-color:#aaddff;
+}
+/* chekbox do adicional*/
+
+input[type=checkbox].css-checkboxADD {
+	  position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+input[type=checkbox].css-checkboxADD + label.css-labelADD {
+	padding-left:20px;
+	height:15px; 
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].css-checkboxADD:checked + label.css-labelADD {
+	background-position: 0 -15px;
+}
+
+input[type=checkbox].css-checkboxADD.lrg + label.css-labelADD.lrgADD {
+	padding-left:22px;
+    height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkboxADD.lrgADD:checked + label.css-labelADD.lrgADD{
+
+    background-position: 0 -20px;
+}
+.vladADD{background-image:url(../img/vlad.png);}

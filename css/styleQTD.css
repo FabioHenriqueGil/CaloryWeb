@@ -1,0 +1,79 @@
+/*
+         CSS-Tricks Example
+         by Chris Coyier
+         http://css-tricks.com
+*/
+
+
+
+/*h1 {
+  font: 26px Georgia, Serif;
+  margin: 0 0 10px 0;
+}*/
+/*form {
+  margin: 50px 0 0 0;
+}*/
+label {
+    font: bold 20px Helvetica, sans-serif;
+    display: block;
+    float: left;
+    text-align: right;
+    padding: 5px 10px 0 0;
+    width: 140px;
+}
+input[type=text] {
+    float: left;
+    width: 100px;
+    height: 100px;
+    font: bold 50px Helvetica, sans-serif;
+    padding: 3px 0 0 0;
+    text-align: center;
+}
+/*form div {
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}*/
+
+
+
+.button{
+   
+    
+    
+}
+/*
+.button {
+    margin: 0 0 0 5px;
+    text-indent: -9999px;
+    cursor: pointer;
+    width: 29px;
+    height: 29px;
+    float: left;
+    text-align: center;
+    background: url(../img/buttons.png) no-repeat;
+}*/
+
+.inc{
+     margin: 0 0 0 5px;
+    cursor: pointer; 
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.dec {
+    
+    margin: 10 0 15 100px;
+    text-indent: -9999px;
+    cursor: pointer;
+    float: left;
+    
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/cancel.png);
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.buttons {
+    padding: 20px 0 0 140px;
+}
