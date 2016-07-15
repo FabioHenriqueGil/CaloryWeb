@@ -1,0 +1,55 @@
+                         config do servidor
+
+depois do lojas instalado, ir em 
+utilitarios->conguracoes->geral: ativar restaurante/lanchonete -> setar mesa ou cartao
+
+limpar tabelas mesas; mesas_itens; quartos;
+
+cadastrar cartoes/mesas em
+cadastros cadastro->Cartoes Automaticos;
+
+importar "caloryWeb.sql" no banco;
+
+instalar xampp (apenas modulo php e apache);
+
+copiar pasta de arquivos "CaloryWebR3" para "c:\xampp\htdocs"
+
+adicionar permissoes de segurança para pasta xampp
+
+startar o apache do xamp e certificar-se que ele sera startado ao iniciar
+	-no xampp control botao config  marcar o apache na opção de autostart
+	-marcar start control painel minimized
+	-va em regedit HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+	-adicione um novo valor da cadeia de caractere
+	-nomea-lo de xampp e por o caminho como c:\xampp\xampp-control.exe	
+
+ocultar a pasta xampp do disco C
+
+copiar arquivo "ImpressaoCozinha" para "c:\Calory"
+
+certificar-se que todas as impressoras estao configuradas para cada grupo de produto
+
+fixar o ip do servidor (no compartilhamento de rede)
+-----------------------------------------------------------------------------------------------
+                      config dos dispositivos
+
+-conectar odispositivo na mesma rede do servidor
+
+-instalar o mozilla firefox (se nao tiver)
+
+-acessar o seginte endereço,   
+	-IP/CaloryWebR3  
+	-onde IP é = ip que foi fixado para o servidor;
+
+-clicar no botao de opções/pagina/adicionar a tela inicial
+
+-ir ate a tela inicial e certificar-se que foi criado o icone "Calory Web" com o logo da xampp
+
+-cadastrar o dispositivo pelo calory web usando a senha calory!!!
+
+
+
+
+
+
+
