@@ -89,6 +89,7 @@ if ($descricaoAdicional == null) {
         if ($atualiza) {
             header('location: mesa.php');
         } else {
+            //esse erro pode ocorrer caso eceder o nr de caracteres por exempo
             echo error();
         }
     } else {

@@ -53,7 +53,7 @@ function getVRTotalItensNaMesa($cartao, $i) {
     $bd = mysql_query($select);
     $resultado = mysql_result($bd, $i, "total");
     $temp = "R$" . number_format($resultado, 2);
-    return implode(",", explode(".", $temp));;
+    return implode(",", explode(".", $temp));
 }
 
 function getVRTotalNaMesa($cartao) {
@@ -146,7 +146,7 @@ function getVRTotalItensNaoConfirmadosNaMesa($cartao,$vendedor, $i) {
     $bd = mysql_query($select);
     $resultado = mysql_result($bd, $i, "valortotal");
     $temp = "R$" . number_format($resultado, 2);
-    return implode(",", explode(".", $temp));;
+    return implode(",", explode(".", $temp));
 }
 
 function getTempoItensNaoConfirmadosNaMesa($cartao, $i) {

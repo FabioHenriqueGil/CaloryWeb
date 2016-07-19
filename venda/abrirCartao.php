@@ -40,7 +40,7 @@ if (!empty($mesa) &&  $mesaJaExiste == null ) {
     VALUES('$mesa', '$data','$parcelas','$parc1','$intervaloParc',"
  . "'$tipoConta','$nomeVendedor','$idCliente','$nomeCliente',"
  . "'$dataEntrega','$horaEntrega','$loja','$lancarContas',"
- . "'$condicional','$tranferido','$enviadoCaixa','$locado')");
+ . "'$condicional','$tranferido','$enviadoCaixa','$locado')"); //?????????????????
     if ($abreCartao){
          echo "<script>
             alert('Cartao abeto com sucesso!')

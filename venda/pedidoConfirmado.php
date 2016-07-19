@@ -39,7 +39,7 @@ function pegaMesa($cartao) {
 }
 
 if (isset($mesaOpcional)) {
-    if (!empty($mesaOpcional)) {
+    if (!empty($mesaOpcional)) {  // se o mesa opcional não for vazio
         registraMesa($mesaOpcional, $numcartao);
     }
 }
@@ -79,14 +79,14 @@ $sqlGravaImp ="INSERT INTO tbpedido_tablet_imp (id, link, codigoproduto, descric
                             FROM tbpedidotablet WHERE link='" . $numcartao . "' and codvendedor='" . $vendedor . "'";
 $gravaImp= mysql_query($sqlGravaImp);
 
-if (!$grava) {
+if (!$grava) {  // se não grava pedido
     echo "<script>
             alert('Pedido negado!')
          </script>
          <script>
             window.location.assign('mesa.php')
          </script>";
-} else if (!$gravaImp) {
+} else if (!$gravaImp) { // se não grava ompressão
      echo "<script>
             alert('ATENCAO: o pedido nao foi enviado para a cozinha!')
          </script>

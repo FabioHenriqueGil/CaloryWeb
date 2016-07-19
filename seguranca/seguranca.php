@@ -1,7 +1,7 @@
 <?php
 
-$_SG['conectaServidor'] = true;    // Abre uma conex�o com o servidor MySQL?
-$_SG['abreSessao'] = true;         // Inicia a sess�o com um session_start()?
+$_SG['conectaServidor'] = true;    // Abre uma conexao com o servidor MySQL?
+$_SG['abreSessao'] = true;         // Inicia a sessao com um session_start()?
 
 $_SG['caseSensitive'] = false;     // Usar case-sensitive? Onde 'thiago' � diferente de 'THIAGO'
 
@@ -55,7 +55,7 @@ function cripsenha($st, $chave = 256) {
  * Fun��o para expulsar um visitante
  */
 function expulsaVisitante() {
-    global $_SG;
+    global $_SG; //variavel global que pode ser usada em qualquer lugar do sistema
 // Remove as vari�veis da sess�o (caso elas existam)
     unset($_SESSION['usuarioID'], $_SESSION['usuarioNome'], $_SESSION['usuarioLogin'], $_SESSION['usuarioSenha']);
 // Manda pra tela de login
@@ -85,7 +85,7 @@ function pegarMAC() {
     }
 }
 
-function protegeCartao() {
+function protegeCartao() {  //nao deixa entrar na mesa sem ter escolhido cartão
     if (empty($_SESSION['cartaoNumero'])) {
         echo "<script>
             alert('informe o numero do cartao!')
